@@ -53,9 +53,10 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src="/Timely_logo.png" alt={COMPANY.name} className="h-10 md:h-12 object-contain" />
-            <span className="text-slate-900 font-semibold text-sm md:text-base whitespace-nowrap">
-              {COMPANY.name}
-            </span>
+            <div className="leading-tight">
+              <div className="text-slate-900 font-semibold text-sm md:text-base">{COMPANY.name}</div>
+              <div className="hidden sm:block text-[11px] md:text-xs text-slate-500">{COMPANY.tagline}</div>
+            </div>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <a href="#services" className="hover:text-slate-900 text-slate-600">Services</a>
